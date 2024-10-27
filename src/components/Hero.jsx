@@ -20,7 +20,7 @@ const Hero = () => {
         </div>
         {/*middle hero image section*/}
         <div className={css.wrapper}>
-            <div className={css.blueCirle}></div>
+            <div className={css.blueCircle}></div>
              <img src={HeroImg} alt="" width={600}/>
              <div className={css.cart2}>
                 <RiShoppingBagFill/>
