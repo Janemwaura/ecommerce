@@ -9,7 +9,8 @@ import { Pagination, Navigation } from 'swiper';
  import 'swiper/css/navigation'
 
  import {SliderProducts} from '/home/janewmwaura/ecommerce/amazon-starterpack/src/data/products.js'
-const Slider = () => {
+
+ const Slider = () => {
   return (
    <div className="s-container">
        <Swiper
