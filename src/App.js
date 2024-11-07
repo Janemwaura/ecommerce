@@ -4,6 +4,8 @@ import Hero from "./components/Hero.jsx";
 import Slider from "./components/Slider";
 import Virtual from "./components/Virtual";
 import Products from "./components/Products";
+import Testimonials from "./components/Testimonials";
+import Footer from "./components/Footer";
 function App() {
   return (
     <div className="App">
@@ -12,6 +14,8 @@ function App() {
       <Slider />
       <Virtual />
       <Products />
+      <Testimonials />
+      <Footer />
     </div>
   );
 }

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import css from '/home/janewmwaura/ecommerce/amazon-starterpack/src/components/Products.module.css'
 import plane from '/home/janewmwaura/ecommerce/amazon-starterpack/src/assets/plane.png'
 import { ProductsData } from '../data/products'
+
 const Products = () => {
 
     const [MenuProducts, setMenuProducts ] = useState(ProductsData)

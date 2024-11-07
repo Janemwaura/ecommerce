@@ -3,6 +3,7 @@ import css from '/home/janewmwaura/ecommerce/amazon-starterpack/src/components/H
 import HeroImg from '/home/janewmwaura/ecommerce/amazon-starterpack/src/assets/hero.png'
 import {RiShoppingBagFill} from 'react-icons/ri'
 import {BsArrowRight} from 'react-icons/bs'
+
 const Hero = () => {
   return (
     <div className={css.container}>
