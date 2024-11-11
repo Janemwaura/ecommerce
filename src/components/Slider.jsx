@@ -12,7 +12,7 @@ import { Pagination, Navigation } from 'swiper';
 
  const Slider = () => {
   return (
-   <div className="s-container">
+   <div className="s-container"> 
        <Swiper
        modules={[Pagination, Navigation]}
        className='mySwiper'

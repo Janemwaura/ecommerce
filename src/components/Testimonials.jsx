@@ -9,7 +9,7 @@ const Testimonials = () => {
       <div className= {css.wrapper}>
         <div className={css.container}>
         <span>Top Rated</span>
-        <span>Seedily say has suitable disposal and boy. 
+        <span>Seedily say has suitable disposal and boy.  
           Exercise joy man children rejoiced.</span>
       
       </div>
@@ -26,6 +26,17 @@ const Testimonials = () => {
       SlidesPerGroup={1}
       spacebetween={20}
       className={css.tCarousel}
+      breakpoints={{
+        856: {
+          slidesPerView: 3
+        },
+        640:{
+          slidesPerView: 2
+        },
+        0:{
+          slidesPerView: 1
+        }
+      }}
       >
          {
          TestimonialsData.map((testimonial, i)=> (

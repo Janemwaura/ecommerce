@@ -2,7 +2,7 @@ import React from 'react'
 import css from '/home/janewmwaura/ecommerce/amazon-starterpack/src/components/Footer.module.css'
 import logo from '/home/janewmwaura/ecommerce/amazon-starterpack/src/assets/logo.png'
 import {
-    InboxIcon,
+    InboxIcon, 
     LoginIcon,
     UsersIcon,
     LinkIcon,

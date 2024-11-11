@@ -5,7 +5,7 @@ import { ProductsData } from '../data/products'
 
 const Products = () => {
 
-    const [MenuProducts, setMenuProducts ] = useState(ProductsData)
+    const [MenuProducts, setMenuProducts ] = useState(ProductsData) 
 
     const filter = (type) => {
         setMenuProducts(ProductsData.filter((product)=>product.type===type))

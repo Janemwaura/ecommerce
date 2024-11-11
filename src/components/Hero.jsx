@@ -1,10 +1,12 @@
-import React from 'react'
-import css from '/home/janewmwaura/ecommerce/amazon-starterpack/src/components/Hero.module.css'
-import HeroImg from '/home/janewmwaura/ecommerce/amazon-starterpack/src/assets/hero.png'
-import {RiShoppingBagFill} from 'react-icons/ri'
-import {BsArrowRight} from 'react-icons/bs'
-
+import React from 'react';
+import css from '/home/janewmwaura/ecommerce/amazon-starterpack/src/components/Hero.module.css';
+import HeroImg from '/home/janewmwaura/ecommerce/amazon-starterpack/src/assets/hero.png';
+import {RiShoppingBagFill} from 'react-icons/ri';
+import {BsArrowRight} from 'react-icons/bs';
+import { motion } from 'framer-motion';
 const Hero = () => {
+
+    const transition = {duration: 3,type: "spring"}
   return (
     <div className={css.container}>
 
@@ -21,9 +23,29 @@ const Hero = () => {
         </div>
         {/*middle hero image section*/}
         <div className={css.wrapper}>
-            <div className={css.blueCircle}></div>
-             <img src={HeroImg} alt="" width={600}/>
-             <div className={css.cart2}>
+
+            {/*bluecircle*/}
+            <motion.div 
+            initial={{bottom: "2rem"}}
+            whileInView={{bottom: "0rem"}}
+            className={css.blueCircle}
+            transition={transition}>  
+            </motion.div>
+
+            {/*Image*/}
+             <motion.img
+             transition={transition}
+             initial={{bottom: "-2rem"}}
+             whileInView={{bottom: "0rem"}}
+             src={HeroImg} alt="" width={600}/>
+
+             {/*Cart Animation*/}
+             <motion.div 
+             transition={transition}
+             initial={{right : "4%"}}
+             whileInView={{right : "2%"}}
+             
+             className={css.cart2}>
                 <RiShoppingBagFill/>
                 <div className={css.signup}>
                     <span>Best Sign up Offers</span>
@@ -32,7 +54,7 @@ const Hero = () => {
                     </div>
 
                 </div>
-              </div>
+              </motion.div>
         </div>
         {/*Right section*/}
         <div className={css.h_sides}>

@@ -5,7 +5,7 @@ import Before from '/home/janewmwaura/ecommerce/amazon-starterpack/src/assets/be
 import After from '/home/janewmwaura/ecommerce/amazon-starterpack/src/assets/after.png'
 import ReactCompareImage from 'react-compare-image';
 
-const Virtual = () => {
+const Virtual = () => { 
   return (
     <div className={css.virtual}>
         <div className={css.left}>
